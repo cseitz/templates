@@ -6,10 +6,12 @@
   "private": true,
   "workspaces": [
     "docs",
-    "packages/*"
+    "packages/*",
+    "templates/**/.template"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cli": "cd packages/cli; npm run dev --",
+    "help": "npm run cli -- --help"
   },
   "keywords": [],
   "author": "",
